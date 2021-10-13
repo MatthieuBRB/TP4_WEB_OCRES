@@ -1,14 +1,11 @@
 import React from "react";
 
-export default class Button extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { bgColor: "#94f6ff" };
-    }
-    
+export default class Button extends React.Component {    
     render() {
         return (
-            <button>{this.props.text}</button>
+            <button onClick = {this.props.onClick}>
+                {this.props.text}
+            </button>
         );
     }
 }
