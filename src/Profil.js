@@ -1,5 +1,6 @@
 import React from "react";
 import Button from './Button.js';
+import Post from "./Post.js";
 
 export default class Profil extends React.Component {
     constructor(props) {
@@ -11,14 +12,17 @@ export default class Profil extends React.Component {
 
     render() {
         return (
-            <div className="profil-page" style={{ backgroundColor: this.state.bgColor }}>
-                <div>{this.props.firstName}</div>
-                <div>{this.props.lastName}</div>
-                <div>{this.props.birthday}</div>
-                <Button
-                    text="Change style"
-                    onClick={() => this.changeStyle()}
-                />
+            <div>
+                <div className="profil-page" style={{ backgroundColor: this.state.bgColor }}>
+                    <div>{this.props.firstName}</div>
+                    <div>{this.props.lastName}</div>
+                    <div>{this.props.birthday}</div>
+                    <Button
+                        text="Change style"
+                        onClick={() => this.changeStyle()}
+                    />
+                </div>
+                <Post />
             </div>
         );
     }
