@@ -18,7 +18,7 @@ export default class Profil extends React.Component {
                 <div className="profile-page col-10" style={{ backgroundColor: this.state.bgColor }}>
                     <div className="container">
                         <div className="image row justify-content-center">
-                            <img className="col-2" src={ProfilePicture} alt="profile_picture" height="100" />
+                            <img className="col-2" src={ProfilePicture} alt="profile_picture" height="120" />
                         </div>
                         <div className="row">
                             <div className="col-6 profile-data"><b>Prénom :</b> {this.props.firstName}</div>
