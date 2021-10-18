@@ -37,7 +37,32 @@
   }
 }
 
-.profil-page {
-  width: 500px;
-  height: 500px;
+#root {
+  height: 100vh;
+  background-color: rgb(233, 233, 233);
+  color: white;
+}
+
+.image {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-page {
+  border: slategray solid 2px;
+  margin-bottom: 40px;
+}
+
+.profile-button {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.style-button {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.profile-data {
+  margin-top: 50px;
 }
