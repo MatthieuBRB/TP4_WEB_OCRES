@@ -37,13 +37,24 @@
   }
 }
 
-#root {
-  height: 100vh;
+body {
   background-color: #fce9c9;
   color: white;
+  font-family: "Montserrat";
+}
+
+header {
+  display: flex;
+  padding: 10px 0 10px 0;
+  background-color: #154d81;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  justify-content: center;
 }
 
 .post {
+  padding-top: 10px;
   color: black;
   background-color: white;
   border: slategray solid 2px;
@@ -64,8 +75,8 @@
 }
 
 .profile-button {
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   background-color: #e1c699;
   border: 1px solid black;
   border-radius: 5px;
@@ -90,4 +101,16 @@
 
 .profile-data {
   margin-top: 50px;
+}
+
+.like-button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #eed8d8;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.like-button:hover {
+  background-color: #eebdbd;
 }

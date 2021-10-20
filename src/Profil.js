@@ -34,7 +34,9 @@ export default class Profil extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Post />
+                <Post 
+                    lastName = {this.props.lastName}
+                />
             </div>
         );
     }
