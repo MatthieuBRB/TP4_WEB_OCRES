@@ -21,7 +21,6 @@ export default class Post extends React.Component {
     }
 
     render() {
-        console.log(this.props.lastName);
         return (
             <div className="post col-10">
                 <h5><b>Last Post</b></h5>
@@ -29,7 +28,9 @@ export default class Post extends React.Component {
                 <Button
                     className="like-button"
                     text="&#128077; C'est super !"
+                    onClick={this.props.onClick}
                 />
+                <span>{this.props.likes} likes</span>
             </div>
         );
     }

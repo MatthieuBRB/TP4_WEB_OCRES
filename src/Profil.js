@@ -1,42 +1,34 @@
 import React from "react";
 import Button from './Button.js';
-import Post from "./Post.js";
-
-import ProfilePicture from "./profile.png";
 
 export default class Profil extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            bgColor: "#2b72b3"
+            bgColor: "#154d81"
         };
     }
 
     render() {
         return (
-            <div className="row justify-content-center">
-                <div className="profile-page col-10" style={{ backgroundColor: this.state.bgColor }}>
-                    <div className="container">
-                        <div className="image row justify-content-center">
-                            <img className="col-2" src={ProfilePicture} alt="profile_picture" height="120" />
-                        </div>
-                        <div className="row">
-                            <div className="col-6 profile-data"><b>Prénom :</b> {this.props.firstName}</div>
-                            <div className="col-6 profile-data"><b>Nom :</b> {this.props.lastName}</div>
-                            <div className="col-12 profile-data"><b>Date de naissance :</b> {this.props.birthday}</div>
-                        </div>
-                        <div className="row justify-content-end">
-                            <Button
-                                className="col-3 style-button"
-                                text="Change style"
-                                onClick={() => this.changeStyleRandomColor()}
-                            />
-                        </div>
+            <div className="profile-page col-10" style={{ backgroundColor: this.state.bgColor }}>
+                <div className="container">
+                    <div className="image row justify-content-center">
+                        <img className="col-auto" src={this.props.src} alt="profile_picture" height="128" />
+                    </div>
+                    <div className="row">
+                        <div className="col-6 profile-data"><b>Prénom :</b> {this.props.firstName}</div>
+                        <div className="col-6 profile-data"><b>Nom :</b> {this.props.lastName}</div>
+                        <div className="col-12 profile-data"><b>Date de naissance :</b> {this.props.birthday}</div>
+                    </div>
+                    <div className="row justify-content-end">
+                        <Button
+                            className="col-3 style-button"
+                            text="Change style"
+                            onClick={() => this.changeStyleRandomColor()}
+                        />
                     </div>
                 </div>
-                <Post 
-                    lastName = {this.props.lastName}
-                />
             </div>
         );
     }

@@ -64,13 +64,22 @@ header {
   margin-top: 10px;
 }
 
+.post > span {
+  color: darkred;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 2px solid darkred;
+  padding: 3px 7px 3px 7px;
+  border-radius: 3px;
+}
+
 .image {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .profile-page {
-  border: rgb(91, 104, 117) solid 2px;
+  border: slategray solid 2px;
   margin-bottom: 40px;
 }
 
